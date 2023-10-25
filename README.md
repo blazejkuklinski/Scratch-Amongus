@@ -65,6 +65,8 @@ Kontrola -> usuń tego klona
 
 ![](./doc/8.png)
 
+> W grze istotne jest zrozumienie współrzędnych. Punk (0;0) to środek planszy gry. Plansza gry ma rozdzielczość 480x360 px, więc prawa krawędź będzie miała współrzędom x=240, a górna krawędź y=180.
+
 W tym momencie można uruchomić grę i sprawdzić pierwsze efekty. Zobaczymy, że co sekundę pojawia się nowy kosmita i leci po moście do statku.
 
 Możemy utworzyć prostą animację, w której nasz kosmita będzie biegł (a nie latał).
@@ -221,35 +223,26 @@ Wygląd -> ukryj
 
 Nadal jednak nie mamy tego co najważniejsze – możliwości „wyrzucenia" impostera. Chcielibyśmy, aby kliknięcie na niego, gdy próbuje dostać się na statek, powodowało wyrzucenie do w przestrzeń kosmiczną. W tym celu klikamy na duszka Kosmita i dodajemy skrypt:
 
+```
 Zdarzenia -\> kiedy ten duszek kliknięty
-
 Kontrola -\> zatrzymaj inne skrypty duszka
-
 Kontrola -\> jeżeli … to … w przeciwnym wypadku …
-
 Wyrażenia -\> … lub …
-
 Wyrażenia -\> … = 1
-
 Wygląd -\> kostium liczba
-
 Wyrażenia -\> … = 2
-
 Wygląd -\> kostium liczba
-
 Zmienne -\> zmień Szanse o -1
-
 Zmienne -\> zmień Punkty o 1
-
 Ruch-\> leć przez 0.5 sekund do x: 0 y: 200
-
 Kontrola -\> usuń tego klona
+```
 
-![](RackMultipart20231025-1-gtd4sr_html_f452098def4ac5bc.png)
+![](./doc/24.png)
 
 Po kliknięciu na kosmitę lub impostera, postać wylatuje w przestrzeń kosmiczną. Jeżeli był to imposter otrzymujemy punkt, jeżeli kosmita – tracimy szansę.
 
-Gra skończona!
+**Gratulacje! Gra skończona!**
 
 ## Zadania dodatkowe
 
@@ -257,7 +250,3 @@ Gra skończona!
 - Wraz z postępem gry zmiana częstotliwości występowania imposterów
 - Wraz z postępem gry przyspieszenie generowania postaci i zwiększanie prędkości poruszania się
 - Losowe pojawianie się specjalnego kosmity którego kliknięcie odnowi ilość szans do trzech.
-
-[1](#sdfootnote1anc) W grze istotne jest zrozumienie współrzędnych. Punk (0;0) to środek planszy gry. Plansza gry ma rozdzielczość 480x360 px, więc prawa krawędź będzie miała współrzędom x=240, a górna krawędź y=180.
-
-6
