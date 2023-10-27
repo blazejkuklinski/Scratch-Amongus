@@ -6,7 +6,7 @@ Among Us na platformie Scratch 3.0
 
 Gra swoim motywem nawiązuje do bardzo popularnej w wśród dzieci i młodzieży (rok 2021) gry Among Us. Jest to strategiczna gra wieloosobowa w której gracze dzielą się na członków załogi (ang. crewmates) oraz od 1 do 3 oszustów (ang. impostors). Zadaniem członków załogi jest wykonywanie zadań na statku, a zadaniem oszustów – sabotowanie misji i eliminowanie członków załogi. Załoga na początku gry otrzymuje informację, ilu oszustów jest na statku. Są oni eliminowani poprzez demokratyczne głosowania, podczas których członkowie załogi konsultują się i na podstawie swoich obserwacji wyłaniają podejrzanych. Osoby, które uzyskały najwięcej głosów, giną. Gdy wszyscy oszuści zostaną zlikwidowani lub gdy członkowie wykonają wszystkie zadania, wygrywa załoga. Gdy oszuści wyeliminują dużą część załogi lub zniszczą ważne części statku, wygrywają.
 
-Gra stworzona na platformie Scratch jest grą zręcznościową ćwiczącą refleks i szybkie podejmowanie decyzji i skupia się na eliminowaniu impostorów zanim zdążą dostać się na pokład statku kosmicznego. Imposterzy wyglądają jak członkowie załogi za wyjątkiem jednego szczegółu – w swoim plecaku próbują przemycić broń. Kliknięcie na postać powoduje wyrzucenie jej w przestrzeń kosmiczną. Gracz musi jednak uważać - przez przypadek może wyeliminować członka załogi. Gracz może pomylić się 3 razy – wpuścić impostera na pokład lub wyrzucić członka załogi. Każda prawidłowa decyzja nagradzana jest przyznaniem punktu.
+Gra stworzona na platformie Scratch jest grą zręcznościową ćwiczącą refleks i szybkie podejmowanie decyzji i skupia się na eliminowaniu impostorów zanim zdążą dostać się na pokład statku kosmicznego. impostorzy wyglądają jak członkowie załogi za wyjątkiem jednego szczegółu – w swoim plecaku próbują przemycić broń. Kliknięcie na postać powoduje wyrzucenie jej w przestrzeń kosmiczną. Gracz musi jednak uważać - przez przypadek może wyeliminować członka załogi. Gracz może pomylić się 3 razy – wpuścić impostora na pokład lub wyrzucić członka załogi. Każda prawidłowa decyzja nagradzana jest przyznaniem punktu.
 
 Gra dostępna jest pod linkiem: [https://scratch.mit.edu/projects/494038652/](https://scratch.mit.edu/projects/494038652/)
 
@@ -65,13 +65,13 @@ Kontrola -> usuń tego klona
 
 ![](./doc/8.png)
 
-> W grze istotne jest zrozumienie współrzędnych. Punk (0;0) to środek planszy gry. Plansza gry ma rozdzielczość 480x360 px, więc prawa krawędź będzie miała współrzędom x=240, a górna krawędź y=180.
+> W grze istotne jest zrozumienie współrzędnych. Punk (0;0) to środek planszy gry. Plansza gry ma rozdzielczość 480x360px, więc prawa krawędź będzie miała współrzędą x=240, a górna krawędź y=180.
 
 W tym momencie można uruchomić grę i sprawdzić pierwsze efekty. Zobaczymy, że co sekundę pojawia się nowy kosmita i leci po moście do statku.
 
 Możemy utworzyć prostą animację, w której nasz kosmita będzie biegł (a nie latał).
 
-Dodajemy nowy kostium dla naszego kosmity – jego nogi są inaczej ułożone i w momencie, gdy będziemy szybko zmieniać kostium 1 i 2 wywołamy prosty efekt animacji jakby jego nogi się poruszały.
+Dodajemy nowy kostium dla naszego kosmity – jego nogi są inaczej ułożone i w momencie, gdy będziemy szybko zmieniać kostium 1 i 2 wywołamy prosty efekt animacji - tak jakby jego nogi się poruszały.
 
 Klikamy na Kosmita, wybieramy zakładkę Kostiumy, najeżdżamy na ikonkę na dole, wybieramy Prześlij kostium. Wybieramy Kosmita 2.
 
@@ -103,17 +103,17 @@ Wyrażenia -> losuj liczbę od 1 do 200
 
 Zgodnie z dokumentacją ([https://en.scratch-wiki.info/wiki/Graphic\_Effect#Color\_3](https://en.scratch-wiki.info/wiki/Graphic_Effect#Color_3)) efekt koloru mieści się w przedziale od 1 do 200. Każda liczba oznacza odcień innego koloru. Każdy nowy klon będzie losował dla siebie swój efekt koloru, dzięki temu każdy z kosmita będzie wyglądał inaczej.
 
-## Losowe tworzenie imposterów
+## Losowe tworzenie impostorów
 
-Mamy już naszego kosmitę. Ale co z imposterem? Musimy losowo tworzyć kosmitę lub impostera który próbuje dostać się na statek. W tym celu przechodzimy do zakładki Kostiumy i dodajemy 2 nowe kostiumy Imposter 1 i Imposter 2.
+Mamy już naszego kosmitę. Ale co z impostorem? Musimy losowo tworzyć kosmitę lub impostora który próbuje dostać się na statek. W tym celu przechodzimy do zakładki Kostiumy i dodajemy 2 nowe kostiumy Impostor 1 i Impostor 2.
 
-Uwaga bardzo istotna jest kolejność kostiumów: Kosmita 1, Kosmita 2, Imposter 1, Imposter 2. W późniejszej części będziemy odnosić się do numeru kostiumu i jeżeli będą one w innej kolejności może to spowodować nieoczekiwane błędy.
+Uwaga bardzo istotna jest kolejność kostiumów: Kosmita 1, Kosmita 2, Impostor 1, Impostor 2. W późniejszej części będziemy odnosić się do numeru kostiumu i jeżeli będą one w innej kolejności może to spowodować nieoczekiwane błędy.
 
 ![](./doc/13.png)
 
-Imposter różni się od kosmity jednym szczegółem – ma schowaną błoń w plecaku. Po tym gracz będzie mógł rozpoznać, że nie może wpuścić do na pokład statku.
+impostor różni się od kosmity jednym szczegółem – ma schowaną błoń w plecaku. Po tym gracz będzie mógł rozpoznać, że nie może wpuścić do na pokład statku.
 
-Aby nasz imposter pojawiał się losowo należy zmodyfikować drugi blok, gdy zaczynam jako klon. Zaraz po nim dodajemy:
+Aby nasz impostor pojawiał się losowo należy zmodyfikować drugi blok, gdy zaczynam jako klon. Zaraz po nim dodajemy:
 
 ```
 Kontrola =\> jeżeli … to … w przeciwnym wypadku … Tworzenie klonów kosmity
@@ -122,15 +122,15 @@ Wyrażenia -\> losuj liczbę od 0 do 1
 Wszystkie istniejące skrypty z tego bloku dodajemy do „jeżeli"
 ```
 
-W sekcji w przeciwnym wypadku duplikujemy skrypty z sekcji „jeżeli" i zmieniamy kostium Kosmita 1 i Kosmita 2 na Imposter 1 i Imposter 2
+W sekcji w przeciwnym wypadku duplikujemy skrypty z sekcji „jeżeli" i zmieniamy kostium Kosmita 1 i Kosmita 2 na impostor 1 i impostor 2
 
 ![](./doc/14.png)
 
-Jeżeli wylosowana liczba to 1 wówczas nasza animacja będzie zmieniała kostiumy kosmity, jeżeli 0 (w przeciwnym wypadku) będziemy animowali kostiumy impostera. Możemy upewnić się, że wszystko działa jak należy uruchamiając grę.
+Jeżeli wylosowana liczba to 1 wówczas nasza animacja będzie zmieniała kostiumy kosmity, jeżeli 0 (w przeciwnym wypadku) będziemy animowali kostiumy impostora. Możemy upewnić się, że wszystko działa jak należy uruchamiając grę.
 
 ## Zdobywanie punktów i tracenie szans
 
-Kolejnym etapem jest zbieranie punktów oraz traceniem szans. Punkty zdobywa się gdy kosmita dotrze do drzwi i kiedy uda się nam wyrzucić impostera w przestrzeń kosmiczną. Szanse tracimy, gdy na statek dostanie się imposter lub gdy przez przypadek wyrzucimy w przesteń kosmiczną kosmitę.
+Kolejnym etapem jest zbieranie punktów oraz traceniem szans. Punkty zdobywa się gdy kosmita dotrze do drzwi i kiedy uda się nam wyrzucić impostora w przestrzeń kosmiczną. Szanse tracimy, gdy na statek dostanie się impostor lub gdy przez przypadek wyrzucimy w przesteń kosmiczną kosmitę.
 
 Pierwszym krokiem jest dodanie zmiennych, które będą przechowywać tę informację.
 
@@ -183,7 +183,7 @@ Wygląd -\> ukryj
 
 ## Plansza zakończenia gry
 
-Po uruchomieniu gry zobaczymy, że kosmita, który doszedł do drzwi faktycznie zwiększa ilość punktów, a imposter zmniejsza ilość szans. Ale nadal nic się nie dzieję, gdy ilość szans jest równa lub mniejsza 0. W takim wypadku powinien pojawić się komunikat o końcu gry.
+Po uruchomieniu gry zobaczymy, że kosmita, który doszedł do drzwi faktycznie zwiększa ilość punktów, a impostor zmniejsza ilość szans. Ale nadal nic się nie dzieję, gdy ilość szans jest równa lub mniejsza 0. W takim wypadku powinien pojawić się komunikat o końcu gry.
 
 W tym celu dodajemy nowe tło Plansza koniec gry.png:
 
@@ -221,7 +221,7 @@ Wygląd -> ukryj
 
 ## Główna mechanika gry
 
-Nadal jednak nie mamy tego co najważniejsze – możliwości „wyrzucenia" impostera. Chcielibyśmy, aby kliknięcie na niego, gdy próbuje dostać się na statek, powodowało wyrzucenie do w przestrzeń kosmiczną. W tym celu klikamy na duszka Kosmita i dodajemy skrypt:
+Nadal jednak nie mamy tego co najważniejsze – możliwości „wyrzucenia" impostora. Chcielibyśmy, aby kliknięcie na niego, gdy próbuje dostać się na statek, powodowało wyrzucenie do w przestrzeń kosmiczną. W tym celu klikamy na duszka Kosmita i dodajemy skrypt:
 
 ```
 Zdarzenia -\> kiedy ten duszek kliknięty
@@ -240,13 +240,13 @@ Kontrola -\> usuń tego klona
 
 ![](./doc/24.png)
 
-Po kliknięciu na kosmitę lub impostera, postać wylatuje w przestrzeń kosmiczną. Jeżeli był to imposter otrzymujemy punkt, jeżeli kosmita – tracimy szansę.
+Po kliknięciu na kosmitę lub impostora, postać wylatuje w przestrzeń kosmiczną. Jeżeli był to impostor otrzymujemy punkt, jeżeli kosmita – tracimy szansę.
 
 **Gratulacje! Gra skończona!**
 
 ## Zadania dodatkowe
 
 - Dodanie muzyki i efektów dźwiękowych
-- Wraz z postępem gry zmiana częstotliwości występowania imposterów
+- Wraz z postępem gry zmiana częstotliwości występowania impostorów
 - Wraz z postępem gry przyspieszenie generowania postaci i zwiększanie prędkości poruszania się
 - Losowe pojawianie się specjalnego kosmity którego kliknięcie odnowi ilość szans do trzech.
